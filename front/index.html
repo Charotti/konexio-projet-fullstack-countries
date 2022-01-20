@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Countries API</title>
-</head>
-<body>
- 
+  </head>
+  <body>
 
-
+    <form>
+     
+      
+          <div class="name">
+              <label for="name">Nom de pays</label>
+              <input id="name" type="text" name="country.name.common" placeholder="Entrez un nom de pays " required>
+              <input type="submit" value="Envoyer"><br><br>
+          </div>
+          
         
-        <button id="btnShowData">ShowData</button>
+    
+  </form>
+
+
+   
+    <p>Faites une recherche par item</p>
+  <p>Par pays: <input type="radio" name="selection" />
+    Par capitale: <input type="radio" name="selection" />
+  </p>
+       
+        
+    
+   
+
+    <button id="btnShowData">ShowData</button>
     <ul id="countriesUl"></ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
