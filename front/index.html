@@ -8,30 +8,39 @@
     <title>Countries API</title>
   </head>
   <body>
-
     <form>
-     
-      
-          <div class="name">
-              <label for="name">Nom de pays</label>
-              <input id="name" type="text" name="country.name.common" placeholder="Entrez un nom de pays " required>
-              <input type="submit" value="Envoyer"><br><br>
-          </div>
-          
-        
-    
-  </form>
+      <div class="name-countries">
+        <label for="name">Nom de pays</label>
+        <input
+          id="form-control"
+          type="text"
+          name="country"
+          placeholder="Entrez un nom de pays "
+          required
+        />
+        <input type="submit" value="Envoyer" /><br /><br />
+      </div>
+    </form>
 
 
-   
-    <p>Faites une recherche par item</p>
-  <p>Par pays: <input type="radio" name="selection" />
-    Par capitale: <input type="radio" name="selection" />
-  </p>
-       
-        
-    
-   
+
+    <!-- <form>
+      <p>Faites une recherche par item</p>
+      <p>
+        Par pays: <input type="radio" name="selection" /> Par capitale:
+        <input type="radio" name="selection" />
+      </p>
+    </form>
+
+    <form action="./script.js">
+      <label for="continent">Choose a continent</label>
+      <select name="continent" id="subregion">
+        <option value="Africa"></option>
+        <option value="Europe"></option>
+        <option value="Americas"></option>
+        <option value="Oceania"></option>
+      </select>
+    </form> -->
 
     <button id="btnShowData">ShowData</button>
     <ul id="countriesUl"></ul>

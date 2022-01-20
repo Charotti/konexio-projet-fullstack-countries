@@ -1,3 +1,19 @@
+
+$(function () {
+  
+      const country= $(".form-control").val()
+    $.ajax({
+      url:`https://restcountries.com/v3.1/name/${country}` ,
+      success: function (data, statuts, response) {
+        console.log(data);
+        $("#country").html(data[0].name.common);
+        $("#capital").html(data[0].capital);
+      },
+    });
+  
+});
+
+
 function getAllcountries() {
   $("#btnShowData").click(function () {  
     $.ajax({
@@ -25,3 +41,7 @@ function getAllcountries() {
   });
 }
 getAllcountries();
+
+
+
+
