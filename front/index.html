@@ -8,7 +8,7 @@
     <title>Countries API</title>
   </head>
   <body>
-    <form>
+    <!-- <form> -->
       <div class="name-countries">
         <label for="name">Nom de pays</label>
         <input
@@ -18,21 +18,22 @@
           placeholder="Entrez un nom de pays "
           required
         />
-        <input type="submit" value="Envoyer" /><br /><br />
+        <input  id="btn" type="submit" value="Envoyer" /><br /><br />
       </div>
-    </form>
+    <!-- </form> -->
 
+    <div id="country"></div>
+    <div id="capital"></div>
 
-
-    <!-- <form>
+    <!-- <!-- <form> -->
       <p>Faites une recherche par item</p>
       <p>
         Par pays: <input type="radio" name="selection" /> Par capitale:
         <input type="radio" name="selection" />
       </p>
-    </form>
+    <!-- </form> -->
 
-    <form action="./script.js">
+    <!-- <form action="./script.js">
       <label for="continent">Choose a continent</label>
       <select name="continent" id="subregion">
         <option value="Africa"></option>
@@ -40,7 +41,7 @@
         <option value="Americas"></option>
         <option value="Oceania"></option>
       </select>
-    </form> -->
+    </form> --> -->
 
     <button id="btnShowData">ShowData</button>
     <ul id="countriesUl"></ul>
